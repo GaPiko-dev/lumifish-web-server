@@ -1,0 +1,4 @@
+FCT|rainbow|!
+FCT|clignotement|!
+
+RGB|128|128|128|!

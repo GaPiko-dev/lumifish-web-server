@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>les moussaillons</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+    Changer fonction
+<form action="/sendFCT" method="POST" onchange="autoPost()">
+    <label>Function : </label>
+    <select name="fct" id="myList">
+        <option value="rainbow">Rainbow</option>
+        <option value="clignotement">Clignotement</option>
+    </select>
+</form>
+
+Changer couleur
+<form action="/sendRGB" method="POST">
+    <label>Red</label>
+    <input type="range" name="red" min="0" max="255" onchange="showVal('red', this.value)"></br>
+    <label>Green</label>
+    <input type="range" name="green" min="0" max="255" onchange="showVal('green', this.value)" ></br>
+    <label>Blue</label>
+    <input type="range" name="blue" min="0" max="255" onchange="showVal('blue', this.value)"></br>
+    
+
+<div class='box' id='color_preview'></div>
+</form>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+
